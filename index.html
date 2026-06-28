@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharfan's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header / Navbar -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="logo">S Moideen Sharfan<span>.</span></div>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home Section -->
+    <section class="hero" id="home">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="hero__subtitle">Hello, I'm</p>
+          <h1 class="hero__title">Sharfan</h1>
+          <h2 class="hero__role">Full Stack Web Developer</h2>
+          <p class="hero__text">
+            I build clean, modern and responsive web experiences with a focus on
+            performance, accessibility, and beautiful UI.
+          </p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--outline">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <div class="blob-photo-wrapper">
+            <div class="blob-glow"></div>
+            <div class="blob-shape"></div>
+            <img src="images/My-Pic.png" alt="My Photo" class="blob-pic" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <div class="section__underline"></div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              I'm a passionate developer who loves turning ideas into real,
+              usable products. I enjoy working with modern web technologies and
+              constantly learning new tools and best practices.
+            </p>
+            <p>
+              My focus is on building clean, minimal interfaces that feel
+              intuitive and smooth to use.
+            </p>
+
+            <div class="about__info">
+              <div>
+                <span class="about__label">Name:</span>
+                <span class="about__value">Sharfan</span>
+              </div>
+              <div>
+                <span class="about__label">Role:</span>
+                <span class="about__value">Full Stack Web Developer</span>
+              </div>
+              <div>
+                <span class="about__label">Location:</span>
+                <span class="about__value">India</span>
+              </div>
+            </div>
+
+            <a href="assets/cv/Sharfan_Web_Developer_CV.pdf" class="btn btn--primary about__btn" download>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="section__underline"></div>
+
+        <div class="skills__grid">
+          <div class="skill-card">
+            <h3 class="skill-card__title">Frontend</h3>
+            <ul class="skill-card__list">
+              <li>HTML5</li>
+              <li>CSS3 / SASS</li>
+              <li>JavaScript</li>
+              <li>React (basic)</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card__title">Backend</h3>
+            <ul class="skill-card__list">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>REST APIs</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card__title">Tools</h3>
+            <ul class="skill-card__list">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Figma (basic)</li>
+              <li>Vercel</li>
+              <li>Render</li>
+              <li>Chat GPT</li>
+              <li>Copilot</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card__title">Other</h3>
+            <ul class="skill-card__list">
+              <li>Responsive Design</li>
+              <li>API Integration</li>
+              <li>SEO Basics</li>
+              <li>Performance Optimization</li>
+              <li>Team Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div class="section__underline"></div>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__tag">Featured</div>
+            <h3 class="project-card__title">Nexus-Qadr</h3>
+            <p class="project-card__desc">
+              Developed a full-stack e-commerce application & Designed responsive user interfaces for customers,
+              sellers, and administrators.
+            </p>
+            <ul class="project-card__tech">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>JavaScript</li>
+              <li>Express.js</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <div class="project-card__links">
+              <a href=" https://nexus-qadr.vercel.app" target="_blank">Live Demo</a>
+              <a href="https://github.com/MSharfan/Nexus-Qadr" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Billing App</h3>
+            <p class="project-card__desc">
+              High-Tech Two wheeler Care Billing Application with user-friendly interface.
+              Built a responsive billing system for small retail business.
+            </p>
+            <ul class="project-card__tech">
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://billing-app-lake-iota.vercel.app/" target="_blank">Live Demo</a>
+              <a href="https://github.com/MSharfan/Billing-App" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Note Keeper Web App</h3>
+            <p class="project-card__desc">
+              A note-taking application with full CRUD functionality & Implemented clean UI and component-based
+              structure.
+            </p>
+            <ul class="project-card__tech">
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-card__links">
+              <a href=" https://note-keeper-app-steel.vercel.app" target="_blank">Live Demo</a>
+              <a href=" https://github.com/MSharfan/Note-keeper-app" target="_blank">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <div class="section__underline"></div>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <p>
+              Have a project in mind, or just want to say hi? Drop a message and
+              I'll get back to you as soon as possible.
+            </p>
+
+            <ul class="contact__details">
+              <li><span>Email:</span> <a href="mailto:Moideensharfan22@gmail.com"> Moideensharfan22@gmail.com </a></li>
+              <li><span>Phone:</span> <a href="tel:+918722868308"> +91-8722868308 </a></li>
+            </ul>
+          </div>
+
+          <form class="contact__form" action="https://formspree.io/f/mzdzydgd" method="POST" autocomplete="off">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <button type="submit" class="btn btn--primary form__btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>© <span id="year"></span> Sharfan. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="https://github.com/MSharfan" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/moideen-sharfan-55750221b/" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://www.youtube.com/@nexus_Qadr_27" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
